@@ -1,3 +1,4 @@
+import random
 def bubble_sort(a):
     n=len(a)
     for i in range(n):
@@ -12,6 +13,6 @@ def bubble_sort(a):
 y=[]
 n = int(input('Enter how many elements you want: '))
 for j in range(0,n):
-    x=int(input("Enter the elements"))
+    x=random.randint(0,1001)
     y.append(x)
 bubble_sort(y)
