@@ -1,3 +1,4 @@
+import random
 def insertion_sort(a):
     for i in range(1,len(a)):
         hole=i
@@ -10,7 +11,7 @@ def insertion_sort(a):
 y=[]
 n = int(input('Enter how many elements you want: '))
 for j in range(0,n):
-    x=int(input("Enter the elements"))
+    x=random.randint(0,1001)
     y.append(x)
 insertion_sort(y)
 
