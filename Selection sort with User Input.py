@@ -1,3 +1,4 @@
+import random
 def selection_sort(a):
     n=len(a)
     for i in range(0,n-1): #elements from 0th position to n-2th position is considered, since last element will be the max and will be in the last position in the end
@@ -12,6 +13,6 @@ def selection_sort(a):
 y=[]
 n = int(input('Enter how many elements you want: '))
 for j in range(0,n):
-    x=int(input("Enter the elements"))
+    x=random.randint(0,1001)
     y.append(x)
 selection_sort(y)
